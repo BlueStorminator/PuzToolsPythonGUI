@@ -2,6 +2,8 @@
 Utility for puzzle hunt enthusiasts.  Tkinter.
 #### Video Demo: https://youtu.be/8Tmd9TMx9ng
 #### Description:  A utility application for puzzle hunt enthusiasts, based on an original web application now re-written as a Python GUI using tkinter.  Use to get word values, compare strings that may be anagrams, see Caesar rotations of words, check basic characteristics of numbers, and access various reference material relating to words and numbers.  Added features include view or download of wordlists for particular word values, prime factorization for numbers, and view of special number sequences between low and high limits.
+#### Installation.
+##### This program should be functional on Linux or Windows systems; it is not optimized for MacOS (as of Aug 2022). Launch from command line in terminal (puzzletools22.py).
 #### Overall structure.
 ##### The program runs within a single instance of a defined PuzzleTools class which creates a root window from tkinter.  Additional classes are defined for customized tkinter widgets.  Class methods are defined for building layouts and for collection of user input and display of results.  User input is passed to functions outside of the class for the actual word and number operations and those results are then returned for display.
 ###### The root window forms the backdrop for 5 functional sections: 1) logobox, 2) header, 3) sidebar, 4) main area, and 5) footnote area (further subdivided into two parts: a quit button and a display bar).
@@ -27,7 +29,7 @@ Utility for puzzle hunt enthusiasts.  Tkinter.
 
 
 #### Other
-##### Files structure.  The project folder contains the main program .py file, an ancillary .py file (with constants, lists, dictionaries), a helper .py file (with operational functions), a config.py file (with parameters most suitable for user preference/adjustment -- these are ported into the ancillary file), an images folder (png images), a reference folder with two .pkl nested dictionary files containing letter and number representation data and a .json wordlist file containing over 300K words (from github.com/dwyl/english-words), a requirements.txt file, and this README.md.
+##### Files structure.  The project folder contains the main program .py file, an ancillary .py file (with constants, lists, dictionaries), a helper .py file (with operational functions), a config.py file (with parameters most suitable for user preference/adjustment -- these are ported into the ancillary file), an images folder (png images), a reference folder with two .pkl nested dictionary files containing letter and number representation data and a .json wordlist file containing over 300K words (from github.com/dwyl/english-words), a requirements.txt file, and this README.md.  
 
 ##### Compatability:
 ###### Developed on a computer running Linux Kubuntu - launches from command line or manually configure to allow launch from start menu.  Appearance and functionality seem acceptable on Windows.  Some adjustments are needed for MacOS (mostly for appearance of Buttons and Dropdown menus).
